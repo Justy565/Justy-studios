@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="sl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Izvedi več o Justy Studios – ustvarjalcih neodvisnih video iger.">
+    <meta name="keywords" content="igre, razvoj iger, Justy Studios, ekipa, indie studio">
+    <meta name="author" content="Justy Studios">
+  <title>Prijava na delo</title>
+  <link rel="stylesheet" href="static/styles.css">
+</head>
+<header>
+  <nav>
+    <div class="wrapper">
+      <a href="index.html"><img src="slike/logo.png" class="logo" alt="Domov" /></a>
+      <h1>Justy Studios</h1>
+      <ul class="main-nav">
+        <li><a href="index.html">Domov</a></li>
+        <li class="dropdown">
+          <a href="igre.html">Naše igre</a>
+          <ul class="dropdown-content">
+              <li><a href="igre/miskolov.html">Miškolov</a></li>
+              <li><a href="igre/roboigra.html">Roboigra</a></li>
+              <li><a href="igre/transformax.html">TransformaX</a></li>
+          </ul>
+      </li>
+        <li><a href="studio.html">Studio</a></li>
+        <li><a href="kontakt.html">Kontakt</a></li>
+        <li><a href="kariera.html" class="active">Kariera</a></li>
+        <li><a href="mnenja.html">Mnenja</a></li>
+        <li><a href="galerija.html">Galerija</a></li>
+      </ul>
+    </div>
+  </nav>
+</header>
+<body>
+
+  <section class="job-application">
+    <form action="prijava.html" method="POST" enctype="multipart/form-data" class="job-application-form" style="max-width:600px; margin: 0 auto; margin-bottom: 3rem;">
+      <h3>Prijava na delovno mesto</h3>
+
+      <label for="ime">Ime in priimek:</label>
+      <input type="text" id="ime" name="ime" required>
+
+      <label for="email">E-pošta:</label>
+      <input type="email" id="email" name="email" required>
+
+      <label for="telefon">Telefon:</label>
+      <input type="tel" id="telefon" name="telefon" pattern="[0-9+ -]{7,15}">
+
+      <label for="pozicija">Izberi pozicijo:</label>
+      <select id="pozicija" name="pozicija" required>
+        <option value="">-- Izberi --</option>
+        <option value="razvijalec">Razvijalec iger</option>
+        <option value="oblikovalec">2D / 3D oblikovalec</option>
+        <option value="pisec">Pisec zgodb</option>
+      </select>
+
+      <label for="datum">Datum razpoložljivosti:</label>
+      <input type="date" id="datum" name="datum">
+
+      <label for="priloga">Priloži CV / portfelj (PDF, max 5MB):</label>
+      <input type="file" id="priloga" name="priloga" accept=".pdf">
+
+      <label for="sporočilo">Dodatna sporočila:</label>
+      <textarea id="sporočilo" name="sporocilo" rows="4" placeholder="Napiši nekaj o sebi..."></textarea>
+
+      <button type="submit" class="btn">Pošlji prijavo</button>
+    </form>
+  </section>
+<footer class="footer">
+  <ul class="social-icon">
+    <li><a href="#"><ion-icon name="logo-facebook"></ion-icon></a></li>
+    <li><a href="#"><ion-icon name="logo-twitter"></ion-icon></a></li>
+    <li><a href="#"><ion-icon name="logo-linkedin"></ion-icon></a></li>
+    <li><a href="https://www.instagram.com/taj_just1n" target="_blank"><ion-icon name="logo-instagram"></ion-icon></a></li>
+  </ul>
+  <ul class="menu">
+    <li><a href="index.html">Domov</a></li>
+    <li><a href="studio.html">Studio</a></li>
+    <li><a href="kontakt.html">Kontakt</a></li>
+  </ul>
+  <p>&copy;2025 Justy Studios | Vse pravice pridržane</p>
+</footer>
+</body>
+</html>
